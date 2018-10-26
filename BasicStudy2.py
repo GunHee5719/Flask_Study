@@ -17,7 +17,7 @@ app = Flask(__name__)
 def hello():
     return '<h1>HELLO WORLD!</h1>'
 
-# 신사2 템플릿엔진을 렌더링함으로서, 아래의 URL로 입력될 시 BasicStudy2.html 이 실행된다.
+# 신사2 템플릿엔진을 렌더링함으로서, 아래의 URL로 입력될 시(ex. 127.0.0.1:5000/user/gunhee) BasicStudy2.html 이 실행된다.
 @app.route('/user/<name>')
 def user(name):
     return render_template('BasicStudy2.html',name=name)
